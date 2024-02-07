@@ -3,10 +3,10 @@
 	margin: 20px 10%;
 	border: 5px;
 	background-color: var(--darkblue);
-	color: var(--white);
+	color: var(--whitecolor);
 	padding: 30px;
-	height: 200px;
-	scroll-margin-top: 100px;
+	border-radius: 10px;
+	margin-top: 20px;
 	position: relative;
 	flex-direction: column;
 	display: flex;
@@ -16,8 +16,26 @@
   .card__heading {
 	margin: 0 0 10px 0;
   }
+
+
+.tags {
+	background-color: var(--greycolor);
+	color: var(--whitecolor);
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.bmimg {
+	position: absolute;
+	top: -10px;
+	right: 20px;
+	width: 30px;
+	height: auto;
+	
+	}
   
   :root {
-	--white: #ffffff; 
+	--whitecolor: #ffffff; 
 	--darkblue: #24788F;
+	--greycolor: #282130;
   }
