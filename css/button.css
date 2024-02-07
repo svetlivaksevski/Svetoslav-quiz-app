@@ -3,7 +3,6 @@
   color: var(--whitecolor);
   padding: 20px;
   border: none;
-  cursor: pointer;
   border-radius: 10px;
   width: 200px;
   align-self: center;
@@ -11,9 +10,7 @@
 }
 
 .buttons:hover {
-
   background-color: var(-darklightcolor);
-  
 }
 
 :root {
