@@ -1,0 +1,25 @@
+.buttons {
+  background-color: var(--darkcolor);
+  color: var(--whitecolor);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+ 
+
+}
+
+.bmimg {
+position: absolute;
+top: 10px;
+right: 10px;
+
+}
+
+.tags {
+	
+}
+
+:root {
+	--darkcolor: #472731;
+	--whitecolor: #ffffff; 
+}
