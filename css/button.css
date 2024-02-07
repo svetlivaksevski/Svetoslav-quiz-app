@@ -10,11 +10,12 @@
 }
 
 .buttons:hover {
-  background-color: var(-darklightcolor);
+  background-color: var(--darklightcolor);
+
 }
 
 :root {
 	--darkcolor: #472731;
-  --darklightcolor: #dbc5cc;
+  --darklightcolor: #000000;
 	--whitecolor: #ffffff; 
 }
