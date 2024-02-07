@@ -55,7 +55,8 @@ p {
 .infotable {
     display: flex;
     justify-content: center;
-	margin-top: 1%;
+	margin-top: 10px;
+	gap: 60px;
 
 }
 
@@ -82,17 +83,26 @@ p {
 .darkmode {
 
 	display: inline;
-	margin-right: 80%;
-	
+	margin-right: 120px;
+	margin-top: 10px;
 	
 }
 
+@media (prefers-color-scheme: dark) {
+    * {
+        color: white;
+    }
+
+    body {
+        background-color:var(--grey);
+    }
+}
 
 :root {
 	--whitecolor: #ffffff;
 	--pinkcolor: #F18A85; 
-	--whitecolor: #ffffff; 
 	--darkblue: #24788F;
 	--greycolor: #282130;
+	--grey: rgb(121, 121, 121); 
 }
 
