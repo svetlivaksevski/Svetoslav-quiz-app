@@ -36,10 +36,14 @@ main {
     flex-direction: column;
     justify-content: center;
     margin-left: 60px;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 24px;
+	font-weight: bolder;
 }
 
-.profile-info h3 {
-    margin: 0;
+p {
+	text-align: center;
+	font-family: 'DM Sans', sans-serif;
 }
 
 .infotable {
@@ -62,7 +66,6 @@ main {
     margin-right: 5px;
 }
 
-.about {
 
 
 
