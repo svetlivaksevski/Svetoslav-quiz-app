@@ -3,6 +3,7 @@
 @import "./header.css";
 @import "./card.css";
 @import "./navigation.css";
+@import "./switch.css";
 
 * {
 	box-sizing: border-box;
@@ -12,9 +13,13 @@
 
 main {
 	
-	margin-top: 80px;
-	margin-bottom: 120px;
-	padding-top: 40px;
+	margin-top: 90px;
+	margin-bottom: 100px;
+	padding: 4%;
+	display: flex;
+	gap: 3vw;
+	flex-direction: column;
+
   }
 
 .profile {
@@ -36,16 +41,23 @@ main {
     flex-direction: column;
     justify-content: center;
     margin-left: 60px;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 24px;
+	font-weight: bolder;
 }
 
-.profile-info h3 {
-    margin: 0;
+p {
+
+	font-family: 'DM Sans', sans-serif;
+	
 }
 
 .infotable {
     display: flex;
     justify-content: center;
 	margin-top: 10px;
+	gap: 60px;
+
 }
 
 .infotable button {
@@ -59,17 +71,38 @@ main {
 }
 
 .infotable .icon {
-    margin-right: 5px;
+    margin-right: 2px;
 }
 
-.about {
+.profile-section {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
 
+.darkmode {
 
+	display: inline;
+	margin-right: 120px;
+
+	
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        color: white;
+    }
+
+    body {
+        background-color:var(--grey);
+    }
+}
 
 :root {
 	--whitecolor: #ffffff;
 	--pinkcolor: #F18A85; 
-	--whitecolor: #ffffff; 
 	--darkblue: #24788F;
 	--greycolor: #282130;
+	--grey: rgb(121, 121, 121); 
 }
+
