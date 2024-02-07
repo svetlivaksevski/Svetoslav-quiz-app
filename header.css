@@ -1,0 +1,19 @@
+.header {
+	background: var(--pinkcolor);
+	color: var(--whitecolor);
+	height: 80px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+  
+  }
+
+  :root {
+	--whitecolor: #ffffff;
+	--pinkcolor: #F18A85; 
+
+  }

@@ -1,0 +1,16 @@
+.card {
+	margin: 20px 10%;
+	border: 5px solid #8236FF;
+	padding: 3% 10%;
+	scroll-margin-top: 100px;
+	border-radius: 2rem;
+	position: relative;
+	left: 0;
+	right: 0;
+  
+  }
+  
+  .card__heading {
+	margin: 0 0 10px 0;
+  }
+  
