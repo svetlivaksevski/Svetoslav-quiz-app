@@ -1,8 +1,8 @@
-@import "global.css";
-@import "button.css";
-@import "header.css";
-@import "card.css";
-@import "navigation.css";
+@import "./global.css";
+@import "./button.css";
+@import "./header.css";
+@import "./card.css";
+@import "./navigation.css";
 
 {
 	box-sizing: border-box;
