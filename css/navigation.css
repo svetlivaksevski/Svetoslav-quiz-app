@@ -1,16 +1,42 @@
-.navigation {
+nav {
 
 		background: var(--kindagrey);
-		color: var(--whitecolor);
 		height: 80px;
 		position: fixed;
 		width: 100%;
 		bottom: 0;
 		left: 0;
 		padding-left: 20px;
-		
+		text-align: center;
+	
 }
 
+.navigation {
+
+	text-align: center;
+}
+
+img {
+	
+	height: 50px;
+}
+
+
+.specialnav {
+	background-color: var(--whitecolor);
+	
+}
+li {
+	width: calc(100vw/3);
+	padding: 15px;
+	
+}
+
+ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
 :root {
 --kindagrey:#849DAB;
 --whitecolor: #ffffff;
