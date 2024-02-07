@@ -1,0 +1,75 @@
+@import "./global.css";
+@import "./button.css";
+@import "./header.css";
+@import "./card.css";
+@import "./navigation.css";
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+  }
+
+main {
+	
+	margin-top: 80px;
+	margin-bottom: 120px;
+	padding-top: 40px;
+  }
+
+.profile {
+		display: flex;
+		align-items: center;
+	}
+	
+.profile_img {
+
+	border-radius: 10px;
+	width: 150px; 
+	height: auto;
+	margin-left: 30px;
+
+	}
+	
+.profile-info {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+}
+
+.profile-info h3 {
+    margin: 0;
+}
+
+.infotable {
+    display: flex;
+    justify-content: center;
+	margin-top: 10px;
+}
+
+.infotable button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: var(--darkblue);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.infotable .icon {
+    margin-right: 5px;
+}
+
+.about {
+
+
+
+:root {
+	--whitecolor: #ffffff;
+	--pinkcolor: #F18A85; 
+	--whitecolor: #ffffff; 
+	--darkblue: #24788F;
+	--greycolor: #282130;
+}
