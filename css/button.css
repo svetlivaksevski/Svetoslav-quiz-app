@@ -10,7 +10,8 @@
 
 }
 
-.buttons.buttons:hover {
+.buttons:hover {
+
   background-color: var(-darklightcolor);
   
 }
