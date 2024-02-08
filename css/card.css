@@ -10,6 +10,8 @@
 	flex-direction: column;
 	display: flex;
 	gap: 20px; 
+	flex-wrap: wrap;
+	
   }
 
   .card__heading {
@@ -41,10 +43,17 @@
 		align-self: center;
 		padding-top: 10px;
 		border-top: 2px dashed var(--whitecolor);
+		flex-wrap: wrap;
 	}
 	
   :root {
 	--whitecolor: #ffffff; 
 	--darkblue: #24788F;
 	--greycolor: #282130;
+  }
+
+  @media(min-width: 900px) {
+	.card {
+		width: 25%;
+	}
   }
