@@ -22,6 +22,7 @@ main {
 
   }
 
+
 .profile {
 		display: flex;
 		align-items: center;
@@ -88,15 +89,6 @@ p {
 	
 }
 
-@media (prefers-color-scheme: dark) {
-    * {
-        color: white;
-    }
-
-    body {
-        background-color:var(--grey);
-    }
-}
 
 :root {
 	--whitecolor: #ffffff;
@@ -106,3 +98,21 @@ p {
 	--grey: rgb(121, 121, 121); 
 }
 
+@media(min-width: 900px) {
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+	* {
+		color: white;
+	}
+
+	body {
+		background-color:var(--grey);
+	}
+}
