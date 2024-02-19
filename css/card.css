@@ -46,6 +46,11 @@
 		flex-wrap: wrap;
 	}
 	
+.hidden_answer {
+	color: var(--whitecolor);
+	align-self: center;
+}	
+
   :root {
 	--whitecolor: #ffffff; 
 	--darkblue: #24788F;
