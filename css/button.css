@@ -5,6 +5,7 @@
   border: none;
   border-radius: 10px;
   align-self: center;
+  transition: opacity 500ms ease-in-out, background-color 500ms ease-in-out;
 
 }
 

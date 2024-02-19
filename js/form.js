@@ -63,14 +63,27 @@ document.querySelector('[data-js="form"]').addEventListener('submit', function(e
 // Count the characters 
 
 const max = 150;
+const form = document.querySelector('[data-js="form"]');
 const textareas = document.querySelectorAll('textarea');
 const infos = document.querySelectorAll('[data-js="info"]');
+const submitButton = document.querySelector('[data-js="submit-button"]');
 
 textareas.forEach((textarea, index) => {
-
   infos[index].textContent = max - textarea.value.length;
 
   textarea.addEventListener('input', function() {
     infos[index].textContent = max - this.value.length;
+    textarea.style.backgroundColor = this.value.length >= max ? 'var(--pinkcolor)' : '';
+  });
 });
-});
+
+form.addEventListener('submit', (event) => {
+	event.preventDefault();
+  
+	textareas.forEach((textarea, index) => {
+	  textarea.value = '';
+	  infos[index].textContent = max;
+	  textarea.style.backgroundColor = '';
+	});
+  });
+  
