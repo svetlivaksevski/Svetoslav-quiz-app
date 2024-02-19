@@ -100,7 +100,7 @@ p {
 
 .formstyle {
 	
-	margin: 20px auto;
+	margin: 5px auto;
     max-width: 600px;
 	background-color: var(--darkblue);
 	color: var(--whitecolor);
@@ -108,6 +108,8 @@ p {
 	padding: 30px;
 	align-self: center;
 	font-family: 'DM Sans', sans-serif;
+	display: flex;
+	flex-direction: column;
 	
   }
 
@@ -119,11 +121,16 @@ button {
 	border-radius: 10px;
 	border: none;
 	font-family: 'DM Sans', sans-serif;
+
   }
+
+.submit_button {
+	align-self: center;
+}
 
 button:hover {
 	background-color: var(--darklightcolor);
-  
+	transition: opacity 500ms ease-in-out, background-color 500ms ease-in-out;
   }
 
 .questionStyle,
