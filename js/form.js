@@ -1,27 +1,58 @@
 // Show the cards
 
 document.querySelector('[data-js="form"]').addEventListener('submit', function(e) {
-    e.preventDefault(); 
-
+	e.preventDefault(); 
+	
     const question = document.getElementById('yourQuestion').value;
     const answer = document.getElementById('yourAnswer').value;
     const tags = document.getElementById('yourTags').value;
-
-
+	
     const cardHTML = `
-	  <section class="card"><h2 class="card__heading">${question}</h2>
-	  <img src="./img/bookmark.png" class="bmimg" data-js="bookmarkimg">
-	  <button class="buttons" data-js="button">Show answer</button>
-	  <p class="hidden_answer" data-js="answer">${answer}</p>
-	  <div class="dots">
-			<span class="tags">#${tags}</span> 
-		</div>
-	  </section>
+	<section class="card"><h2 class="card__heading">${question}</h2>
+	<img src="./img/bookmark.png" class="bmimg" data-js="bookmarkimg">
+	<button class="buttons" data-js="button">Show answer</button>
+	<p class="hidden_answer" data-js="answer">${answer}</p>
+	<div class="dots">
+	<span class="tags">#${tags}</span> 
+	</div>
+	</section>
     `;
-
-
+	
+	
+	
     const cardsContainer = document.getElementById('cardsContainer');
     cardsContainer.insertAdjacentHTML('beforeend', cardHTML);
+	
+	const myImg = document.querySelectorAll('[data-js="bookmarkimg"]');
+
+	myImg.forEach(myImg => {
+		myImg.addEventListener("click", function() {
+			if (myImg.src.endsWith("/img/bookmark.png")) {
+				myImg.src = "./img/bookmark_filled.png";
+			} else {
+				myImg.src = "./img/bookmark.png";
+			}
+		});
+	});
+
+	const showAnswer = document.querySelectorAll('[data-js="button"]');
+
+	showAnswer.forEach(button => {
+	  const hiddenAnswer = button.nextElementSibling; 
+	
+	  hiddenAnswer.style.display = 'none';
+	
+	  button.addEventListener('click', function() {
+		if (hiddenAnswer.style.display === 'none') {
+			hiddenAnswer.style.display = 'block';
+		  button.textContent = 'Hide Answer';
+		} else {
+			hiddenAnswer.style.display = 'none';
+		  button.textContent = 'Show Answer';
+		}
+	  });
+	});
+
 
 	document.getElementById('yourQuestion').value = '';
     document.getElementById('yourAnswer').value = '';

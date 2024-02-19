@@ -1,3 +1,103 @@
+@import "./global.css";
+@import "./button.css";
+@import "./header.css";
+@import "./card.css";
+@import "./navigation.css";
+@import "./switch.css";
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+  }
+
+  body {
+	background-color: var(--whitecolor);
+	color: var(--greycolor);
+  }
+
+main {
+	
+	margin-top: 90px;
+	margin-bottom: 100px;
+	padding: 4%;
+	display: flex;
+	gap: 3vw;
+	flex-direction: column;
+
+  }
+
+
+.profile {
+		display: flex;
+		align-items: center;
+	}
+	
+.profile_img {
+
+	border-radius: 10px;
+	width: 150px; 
+	height: auto;
+	margin-left: 30px;
+
+	}
+	
+.profile-info {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 60px;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 24px;
+	font-weight: bolder;
+}
+
+p {
+
+	font-family: 'DM Sans', sans-serif;
+	
+}
+
+.infotable {
+    display: flex;
+    justify-content: center;
+	margin-top: 10px;
+	gap: 60px;
+
+}
+
+.infotable button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: var(--darkblue);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.infotable .icon {
+    margin-right: 2px;
+}
+
+.profile-section {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.dark-mode {
+
+	display: inline;
+	margin-right: 120px;
+	background-color: var(--grey); 
+	color: #ffffff; 
+
+}
+
+
+
 .formstyle {
 	
 	margin: 20px auto;
@@ -55,6 +155,15 @@ textarea {
     font-size: 16px;
     color: var(--whitecolor);
 	text-align: right;
+}
+
+.newCardStyle {
+	position: relative;
+	flex-direction: column;
+	display: flex;
+	gap: 20px; 
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 :root {
