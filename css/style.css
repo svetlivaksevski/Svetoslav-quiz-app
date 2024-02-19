@@ -9,6 +9,12 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+
+  }
+
+  body {
+	background-color: var(--whitecolor);
+	color: var(--greycolor);
   }
 
 main {
@@ -81,13 +87,15 @@ p {
 	gap: 30px;
 }
 
-.darkmode {
+.dark-mode {
 
 	display: inline;
 	margin-right: 120px;
+	background-color: var(--grey); 
+	color: #ffffff; 
 
-	
 }
+
 
 
 :root {
@@ -107,13 +115,5 @@ main {
 }
 }
 
-body {
-	background-color: var(--whitecolor);
-	color: var(--greycolor);
-  }
 
-.dark-mode {
-	background-color: var(--grey); 
-	color: #ffffff; 
-  }
 
