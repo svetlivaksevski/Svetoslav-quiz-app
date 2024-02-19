@@ -107,12 +107,13 @@ main {
 }
 }
 
-@media (prefers-color-scheme: dark) {
-	* {
-		color: white;
-	}
+body {
+	background-color: var(--whitecolor);
+	color: var(--greycolor);
+  }
 
-	body {
-		background-color:var(--grey);
-	}
-}
+.dark-mode {
+	background-color: var(--grey); 
+	color: #ffffff; 
+  }
+
