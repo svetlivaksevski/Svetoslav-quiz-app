@@ -3,9 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Form</title>
+	<title>Home page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,700;1,9..40,300;1,9..40,400;1,9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/index.js" defer></script>
+<script src="./js/form.js" defer></script>
 </head>
 <body>
-	
+	<header class="header"><h1>Quiz App</h1></header>
+<main>
+	<form class="formstyle" data-js="form">
+		<section class="questionStyle">
+			<label for="yourQuestion">Your Question:</label>
+            <textarea name="yourQuestion" id="yourQuestion" rows="5" cols="50" maxlength="150" placeholder="Write your question here..." data-js="yourquestion"></textarea>
+			<p id="leftcharacters">characters left <spna data-js="info"></span></p>
+		</section>
+		
+		<section class="answerStyle">
+		<label for="youranswer">Your Answer:</label>
+            <textarea name="yourAnswer" id="yourAnswer" maxlength="150" rows="5" cols="50" placeholder="Write your answer here..." data-js="youranswer"></textarea>
+			<p id="leftcharacters">characters left <spna data-js="info"></span></p>
+		</section>
+
+		<section class="tagStyle">
+		<label for="yourTags">Tag:</label>
+		<input type="text" name="yourTags" id="yourTags" data-js="yourtags"></section>
+
+		<section class="submit"><button type="submit"  data-js="submit-button">Submit!</button></section>
+		</form>
+<section class="newCardStyle" id="cardsContainer"></section>
+</main>
+<nav>
+	<ul class="navigation">
+	<li><a href="index.html"><img src="./img/home_filled.png"></a></li>
+	<li><a href="bookmarks.html"><img src="./img/bookmark_transparent.png"></a></li>
+	<li class="specialnav"><a href="#"><img src="./img/add_filled.png"></a></li>
+	<li><a href="profile.html"><img src="./img/profile.png"></a></li> 
+	</ul>
+</nav>
 </body>
 </html>
