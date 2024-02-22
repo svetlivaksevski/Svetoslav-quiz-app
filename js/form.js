@@ -67,7 +67,6 @@ document.querySelector('[data-js="form"]').addEventListener('submit', function(e
 // Count the characters 
 
 const max = 150;
-const submitButton = document.querySelector('[data-js="submit-button"]');
 const charactersAreaOne = document.querySelector('[data-js="changetextOne"]')
 const charactersAreaTwo = document.querySelector('[data-js="changetextTwo"]')
 const yourQuestion = document.querySelector('[data-js="yourquestion"]')
