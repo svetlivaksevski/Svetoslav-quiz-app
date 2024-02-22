@@ -74,13 +74,13 @@ const yourAnswer = document.querySelector('[data-js="youranswer"]')
 
 
 yourQuestion.addEventListener('input', function() {
-	charactersAreaOne.textContent = `${((max - this.value.length) < 2 ? "character" : "characters")} left ${max - this.value.length}`
+	charactersAreaOne.textContent = `${((max - this.value.length) === 1 ? "character" : "characters")} left ${max - this.value.length}`
 	yourQuestion.style.backgroundColor = this.value.length >= max ? 'var(--pinkcolor)' : '';
 
 });	 
 
 yourAnswer.addEventListener('input', function() {
-	charactersAreaTwo.textContent = `${((max - this.value.length) < 2 ? "character" : "characters")} left ${max - this.value.length}`
+	charactersAreaTwo.textContent = `${((max - this.value.length) === 1 ? "character" : "characters")} left ${max - this.value.length}`
 	yourAnswer.style.backgroundColor = this.value.length >= max ? 'var(--pinkcolor)' : '';
   
 });	 
